@@ -20,7 +20,7 @@
   <body>
     <div id="wrap">
 
-      <!-- Fixed navbar -->
+      <!-- Fixed top navbar -->
       <div id="header">
         <div class="row">
           <p>made with <span class="heart-icon"><i class="fa fa-heart"></i></span> by <span class="buixld">buixld</span></p>
@@ -44,49 +44,181 @@
           </div>
         </div>
 
+
       <!-- Begin page content -->
       <div class="container">
-        <div class="col-md-2">
-          <div class="row">
-            <ul id="nav-menu" class="list-unstyled">
-              <li>
-                <div id="logo">
-                  <h2 class="hca-type">HCA <span class="copyright"><i class="fa fa-copyright"></i></span></h2>
-                  <h4 class="style-guide-type">Style Guide</h4>
-                </div>
-              </li>
-              <li class="nav-menu-item">Intro</li>
-              <li class="nav-menu-item">Buttons & Icons</li>
-              <li class="nav-menu-item">Colors</li>
-              <li class="nav-menu-item">Forms</li>
-              <li class="nav-menu-item">Grid</li>
-              <li class="nav-menu-item">Typefaces</li>
-              <li class="nav-menu-item">Profile Photos</li>
-              <li class="nav-menu-item">Modals</li>
-              <li class="nav-menu-item">Tabs</li>
+        <!-- Fixed Side Nav -->
+        <div id="nav-anchor"></div> <!-- anchor used to calculate distance to top of viewport -->
+
+        <div class="">
+          <div class="hidden-print hidden-xs hidden-sm affix side-nav" role="complementary">
+            <ul class="nav">
+                <li>
+                  <div id="logo">
+                    <h2 class="hca-type">HCA <span class="copyright"><i class="fa fa-copyright"></i></span></h2>
+                    <h4 class="style-guide-type">Style Guide</h4>
+                  </div>
+                </li>
+              
+                <li class="active">
+                  <a href="#intro">Intro</a>
+                </li>
+                <li>
+                  <a href="#buttons">Buttons &amp; Icons</a>
+                </li>
+                <li>
+                  <a href="#colors">Colors</a>
+                </li>
+                <li>
+                  <a href="#forms">Forms</a>
+                </li>
+                <li>
+                  <a href="#grid">Grid</a>
+                </li>
+                <li>
+                  <a href="#typefaces">Typefaces</a>
+                </li>
+                <li>
+                  <a href="#profile-photos">Profile Photos</a>
+                </li>
+                <li><a href="#modals">Modals</a></li>
+                <li>
+                  <a href="#tabs">Tabs</a>
+                </li>
             </ul>
           </div>
         </div>
-        <div class="col-md-10 main-content">
+
+        <!-- Main scrollable content -->
+        <div class="col-md-10 col-md-offset-2 main-content">
           <div class="page-header">
             <h1>Sticky footer with fixed navbar</h1>
           </div>
           <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added within <code>#wrap</code> with <code>padding-top: 60px;</code> on the <code>.container</code>.</p>
           <p>Back to <a href="http://getbootstrap.com/2.3.2/examples/sticky-footer.html">the sticky footer</a> minus the navbar.</p>
-        </div>
-      </div>
 
+          <section id="intro">
+            <p>Need some content to fill this crap. Bacon ipsum dolor sit amet porchetta pariatur jerky, exercitation excepteur duis drumstick cow pork pork belly bresaola. Rump incididunt andouille tenderloin, quis sirloin t-bone veniam dolore cillum aliquip irure. Kielbasa pastrami eiusmod frankfurter t-bone nostrud id occaecat eu tongue short ribs. Nostrud aliqua biltong, prosciutto short ribs turkey pig anim.</p>
+            <p>Chicken flank officia exercitation venison. Capicola pork loin drumstick, dolore tri-tip quis chuck venison sausage est bresaola turkey. Bresaola dolore salami excepteur venison. Duis jerky tongue, in kielbasa labore brisket cupidatat sint drumstick bacon enim. Porchetta laboris chuck spare ribs do tail brisket beef ribs magna non meatball.</p>
+            <img src="http://placehold.it/1000x400" class="img-responsive">
+            <p>Magna qui t-bone ribeye fatback leberkas frankfurter ullamco pork belly. Non in commodo aute anim turkey. Nulla occaecat culpa cillum pork belly laborum landjaeger nisi shank magna salami porchetta. Aliqua turkey leberkas pork loin fatback jerky, et strip steak. Beef enim proident dolor quis voluptate cillum, elit drumstick esse aliquip pork loin sed consectetur. Do ex tenderloin, tail nulla reprehenderit boudin deserunt pig aliquip adipisicing.</p>
+          </section>
+          <section id="buttons">
+            <p>Chicken flank officia exercitation venison. Capicola pork loin drumstick, dolore tri-tip quis chuck venison sausage est bresaola turkey. Bresaola dolore salami excepteur venison. Duis jerky tongue, in kielbasa labore brisket cupidatat sint drumstick bacon enim. Porchetta laboris chuck spare ribs do tail brisket beef ribs magna non meatball.</p>
+            <p>Magna qui t-bone ribeye fatback leberkas frankfurter ullamco pork belly. Non in commodo aute anim turkey. Nulla occaecat culpa cillum pork belly laborum landjaeger nisi shank magna salami porchetta. Aliqua turkey leberkas pork loin fatback jerky, et strip steak. Beef enim proident dolor quis voluptate cillum, elit drumstick esse aliquip pork loin sed consectetur. Do ex tenderloin, tail nulla reprehenderit boudin deserunt pig aliquip adipisicing.</p>
+            <p>Chicken flank officia exercitation venison. Capicola pork loin drumstick, dolore tri-tip quis chuck venison sausage est bresaola turkey. Bresaola dolore salami excepteur venison. Duis jerky tongue, in kielbasa labore brisket cupidatat sint drumstick bacon enim. Porchetta laboris chuck spare ribs do tail brisket beef ribs magna non meatball.</p>
+            <p>Magna qui t-bone ribeye fatback leberkas frankfurter ullamco pork belly. Non in commodo aute anim turkey. Nulla occaecat culpa cillum pork belly laborum landjaeger nisi shank magna salami porchetta. Aliqua turkey leberkas pork loin fatback jerky, et strip steak. Beef enim proident dolor quis voluptate cillum, elit drumstick esse aliquip pork loin sed consectetur. Do ex tenderloin, tail nulla reprehenderit boudin deserunt pig aliquip adipisicing.</p>
+            <img src="http://placehold.it/1500x400" class="img-responsive">
+          </sections>
+          <section id="colors">
+            <p>Chicken flank officia exercitation venison. Capicola pork loin drumstick, dolore tri-tip quis chuck venison sausage est bresaola turkey. Bresaola dolore salami excepteur venison. Duis jerky tongue, in kielbasa labore brisket cupidatat sint drumstick bacon enim. Porchetta laboris chuck spare ribs do tail brisket beef ribs magna non meatball.</p>
+            <p>Magna qui t-bone ribeye fatback leberkas frankfurter ullamco pork belly. Non in commodo aute anim turkey. Nulla occaecat culpa cillum pork belly laborum landjaeger nisi shank magna salami porchetta. Aliqua turkey leberkas pork loin fatback jerky, et strip steak. Beef enim proident dolor quis voluptate cillum, elit drumstick esse aliquip pork loin sed consectetur. Do ex tenderloin, tail nulla reprehenderit boudin deserunt pig aliquip adipisicing.</p>
+            <p>Chicken flank officia exercitation venison. Capicola pork loin drumstick, dolore tri-tip quis chuck venison sausage est bresaola turkey. Bresaola dolore salami excepteur venison. Duis jerky tongue, in kielbasa labore brisket cupidatat sint drumstick bacon enim. Porchetta laboris chuck spare ribs do tail brisket beef ribs magna non meatball.</p>
+            <img src="http://placehold.it/1000x400" class="img-responsive">
+            <p>Magna qui t-bone ribeye fatback leberkas frankfurter ullamco pork belly. Non in commodo aute anim turkey. Nulla occaecat culpa cillum pork belly laborum landjaeger nisi shank magna salami porchetta. Aliqua turkey leberkas pork loin fatback jerky, et strip steak. Beef enim proident dolor quis voluptate cillum, elit drumstick esse aliquip pork loin sed consectetur. Do ex tenderloin, tail nulla reprehenderit boudin deserunt pig aliquip adipisicing.</p>
+          </section>
+          <section id="forms">
+            <p>Chicken flank officia exercitation venison. Capicola pork loin drumstick, dolore tri-tip quis chuck venison sausage est bresaola turkey. Bresaola dolore salami excepteur venison. Duis jerky tongue, in kielbasa labore brisket cupidatat sint drumstick bacon enim. Porchetta laboris chuck spare ribs do tail brisket beef ribs magna non meatball.</p>
+            <p>Magna qui t-bone ribeye fatback leberkas frankfurter ullamco pork belly. Non in commodo aute anim turkey. Nulla occaecat culpa cillum pork belly laborum landjaeger nisi shank magna salami porchetta. Aliqua turkey leberkas pork loin fatback jerky, et strip steak. Beef enim proident dolor quis voluptate cillum, elit drumstick esse aliquip pork loin sed consectetur. Do ex tenderloin, tail nulla reprehenderit boudin deserunt pig aliquip adipisicing.</p>
+            <p>Chicken flank officia exercitation venison. Capicola pork loin drumstick, dolore tri-tip quis chuck venison sausage est bresaola turkey. Bresaola dolore salami excepteur venison. Duis jerky tongue, in kielbasa labore brisket cupidatat sint drumstick bacon enim. Porchetta laboris chuck spare ribs do tail brisket beef ribs magna non meatball.</p>
+          </section>
+          <section id="grid">
+            <p>Magna qui t-bone ribeye fatback leberkas frankfurter ullamco pork belly. Non in commodo aute anim turkey. Nulla occaecat culpa cillum pork belly laborum landjaeger nisi shank magna salami porchetta. Aliqua turkey leberkas pork loin fatback jerky, et strip steak. Beef enim proident dolor quis voluptate cillum, elit drumstick esse aliquip pork loin sed consectetur. Do ex tenderloin, tail nulla reprehenderit boudin deserunt pig aliquip adipisicing.</p>
+            <p>Chicken flank officia exercitation venison. Capicola pork loin drumstick, dolore tri-tip quis chuck venison sausage est bresaola turkey. Bresaola dolore salami excepteur venison. Duis jerky tongue, in kielbasa labore brisket cupidatat sint drumstick bacon enim. Porchetta laboris chuck spare ribs do tail brisket beef ribs magna non meatball.</p>
+            <p>Magna qui t-bone ribeye fatback leberkas frankfurter ullamco pork belly. Non in commodo aute anim turkey. Nulla occaecat culpa cillum pork belly laborum landjaeger nisi shank magna salami porchetta. Aliqua turkey leberkas pork loin fatback jerky, et strip steak. Beef enim proident dolor quis voluptate cillum, elit drumstick esse aliquip pork loin sed consectetur. Do ex tenderloin, tail nulla reprehenderit boudin deserunt pig aliquip adipisicing.</p>
+          </section>
+          <section id="typefaces">
+            <p>Chicken flank officia exercitation venison. Capicola pork loin drumstick, dolore tri-tip quis chuck venison sausage est bresaola turkey. Bresaola dolore salami excepteur venison. Duis jerky tongue, in kielbasa labore brisket cupidatat sint drumstick bacon enim. Porchetta laboris chuck spare ribs do tail brisket beef ribs magna non meatball.</p>
+            <p>Magna qui t-bone ribeye fatback leberkas frankfurter ullamco pork belly. Non in commodo aute anim turkey. Nulla occaecat culpa cillum pork belly laborum landjaeger nisi shank magna salami porchetta. Aliqua turkey leberkas pork loin fatback jerky, et strip steak. Beef enim proident dolor quis voluptate cillum, elit drumstick esse aliquip pork loin sed consectetur. Do ex tenderloin, tail nulla reprehenderit boudin deserunt pig aliquip adipisicing.</p>
+            <p>Chicken flank officia exercitation venison. Capicola pork loin drumstick, dolore tri-tip quis chuck venison sausage est bresaola turkey. Bresaola dolore salami excepteur venison. Duis jerky tongue, in kielbasa labore brisket cupidatat sint drumstick bacon enim. Porchetta laboris chuck spare ribs do tail brisket beef ribs magna non meatball.</p>
+            <p>Magna qui t-bone ribeye fatback leberkas frankfurter ullamco pork belly. Non in commodo aute anim turkey. Nulla occaecat culpa cillum pork belly laborum landjaeger nisi shank magna salami porchetta. Aliqua turkey leberkas pork loin fatback jerky, et strip steak. Beef enim proident dolor quis voluptate cillum, elit drumstick esse aliquip pork loin sed consectetur. Do ex tenderloin, tail nulla reprehenderit boudin deserunt pig aliquip adipisicing.</p>
+            <img src="http://placehold.it/2000x400" class="img-responsive">
+          </section>
+          <section id="profile-photos">
+            <p>Chicken flank officia exercitation venison. Capicola pork loin drumstick, dolore tri-tip quis chuck venison sausage est bresaola turkey. Bresaola dolore salami excepteur venison. Duis jerky tongue, in kielbasa labore brisket cupidatat sint drumstick bacon enim. Porchetta laboris chuck spare ribs do tail brisket beef ribs magna non meatball.</p>
+            <p>Magna qui t-bone ribeye fatback leberkas frankfurter ullamco pork belly. Non in commodo aute anim turkey. Nulla occaecat culpa cillum pork belly laborum landjaeger nisi shank magna salami porchetta. Aliqua turkey leberkas pork loin fatback jerky, et strip steak. Beef enim proident dolor quis voluptate cillum, elit drumstick esse aliquip pork loin sed consectetur. Do ex tenderloin, tail nulla reprehenderit boudin deserunt pig aliquip adipisicing.</p>
+            <p>Chicken flank officia exercitation venison. Capicola pork loin drumstick, dolore tri-tip quis chuck venison sausage est bresaola turkey. Bresaola dolore salami excepteur venison. Duis jerky tongue, in kielbasa labore brisket cupidatat sint drumstick bacon enim. Porchetta laboris chuck spare ribs do tail brisket beef ribs magna non meatball.</p>
+            <p>Magna qui t-bone ribeye fatback leberkas frankfurter ullamco pork belly. Non in commodo aute anim turkey. Nulla occaecat culpa cillum pork belly laborum landjaeger nisi shank magna salami porchetta. Aliqua turkey leberkas pork loin fatback jerky, et strip steak. Beef enim proident dolor quis voluptate cillum, elit drumstick esse aliquip pork loin sed consectetur. Do ex tenderloin, tail nulla reprehenderit boudin deserunt pig aliquip adipisicing.</p>
+          </section>
+          <section id="modals">
+            <p>Chicken flank officia exercitation venison. Capicola pork loin drumstick, dolore tri-tip quis chuck venison sausage est bresaola turkey. Bresaola dolore salami excepteur venison. Duis jerky tongue, in kielbasa labore brisket cupidatat sint drumstick bacon enim. Porchetta laboris chuck spare ribs do tail brisket beef ribs magna non meatball.</p>
+            <p>Magna qui t-bone ribeye fatback leberkas frankfurter ullamco pork belly. Non in commodo aute anim turkey. Nulla occaecat culpa cillum pork belly laborum landjaeger nisi shank magna salami porchetta. Aliqua turkey leberkas pork loin fatback jerky, et strip steak. Beef enim proident dolor quis voluptate cillum, elit drumstick esse aliquip pork loin sed consectetur. Do ex tenderloin, tail nulla reprehenderit boudin deserunt pig aliquip adipisicing.</p>
+            <p>Chicken flank officia exercitation venison. Capicola pork loin drumstick, dolore tri-tip quis chuck venison sausage est bresaola turkey. Bresaola dolore salami excepteur venison. Duis jerky tongue, in kielbasa labore brisket cupidatat sint drumstick bacon enim. Porchetta laboris chuck spare ribs do tail brisket beef ribs magna non meatball.</p>
+            <p>Magna qui t-bone ribeye fatback leberkas frankfurter ullamco pork belly. Non in commodo aute anim turkey. Nulla occaecat culpa cillum pork belly laborum landjaeger nisi shank magna salami porchetta. Aliqua turkey leberkas pork loin fatback jerky, et strip steak. Beef enim proident dolor quis voluptate cillum, elit drumstick esse aliquip pork loin sed consectetur. Do ex tenderloin, tail nulla reprehenderit boudin deserunt pig aliquip adipisicing.</p>
+          </section>
+          <section id="tabs">
+            <img src="http://placehold.it/3000x600" class="img-responsive">
+            <p>Chicken flank officia exercitation venison. Capicola pork loin drumstick, dolore tri-tip quis chuck venison sausage est bresaola turkey. Bresaola dolore salami excepteur venison. Duis jerky tongue, in kielbasa labore brisket cupidatat sint drumstick bacon enim. Porchetta laboris chuck spare ribs do tail brisket beef ribs magna non meatball.</p>
+            <p>Magna qui t-bone ribeye fatback leberkas frankfurter ullamco pork belly. Non in commodo aute anim turkey. Nulla occaecat culpa cillum pork belly laborum landjaeger nisi shank magna salami porchetta. Aliqua turkey leberkas pork loin fatback jerky, et strip steak. Beef enim proident dolor quis voluptate cillum, elit drumstick esse aliquip pork loin sed consectetur. Do ex tenderloin, tail nulla reprehenderit boudin deserunt pig aliquip adipisicing.</p>
+          </section>
+
+        </div>
+        <!-- end main scrollable content -->
+      </div>
+      <!-- end container -->
+
+
+
+
+    <!-- STICKY FOOTER -->
       <div id="push"></div>
     </div>
 
     <div id="footer">
       <div class="container">
-      <hr>
-      <div class="col-md-4">
-        <h4 class="muted">buixld</h4>
-      </div>
-      <div class="col-md-4"></div>
-      <div class="col-md-4"></div>
+      <!-- <hr> -->
+        <div class="row">
+          <div class="col-xs-12">
+            <h3 class="muted">buixld</h3>
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <span class="footer-text">Serving as the interna UI/UX arm of HCA.</span>
+            <a href="http://www.buixld.com">buixld.com</a>
+          </div>
+          <div class="col-sm-4">
+            <a href="http://www.buixld.com">Contact Us</a>
+            <a href="http://www.buixld.com">Hospital Corporation of America</a>
+            <a href="http://www.buixld.com">Legal Notes</a>
+          </div>
+          <div class="col-sm-4">
+
+            <div class="row">
+              <div class="col-xs-2">
+                <span>BUIXLD: </span>
+              </div>
+
+              <div class="col-xs-10">
+                <ul class="footer-social">
+                  <!-- <span>BUIXLD: </span> -->
+                  <li><a href="http://www.twitter.com/buixld">Twitter</a></li>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="http://www.instagram.com/buixld">Instagram</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-2">
+                <span>HCA: </span>
+              </div>
+
+              <div class="col-xs-10">
+                <ul class="footer-social">
+                  <!-- <span>HCA: </span> -->
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">YouTube</a></li>
+                </ul>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
       </div>
     </div>
 
