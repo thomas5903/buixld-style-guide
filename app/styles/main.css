@@ -1,268 +1,3 @@
-/* Sticky footer styles
-      -------------------------------------------------- */
-
-html,
-body {
-  height: 100%;
-  /* The html and body elements cannot have any padding or margin. */
-
-}
-
-/* Wrapper for page content to push down footer */
-
-#wrap {
-  height: auto !important;
-  height: 100%;
-  min-height: 100%;
-  margin: 0 auto -120px;
-}
-
-#header {
-  min-height: 40px;
-  background-color: #363636;
-}
-
-#header .row {
-  text-align: center;
-}
-
-#header p {
-  color: #6e6e6e;
-}
-
-#right-nav {
-  position: fixed;
-  right: 0;
-  float: right;
-}
-
-/* Set the fixed height of the footer here */
-
-#push,
-#footer {
-  height: 110px;
-}
-
-/* Lastly, apply responsive CSS fixes as necessary */
-
-@media (max-width: 767px) {
-  #footer {
-    padding-right: 20px;
-    padding-left: 20px;
-    margin-right: -20px;
-    margin-left: -20px;
-  }
-}
-
-.container .credit {
-  margin: 20px 0;
-}
-
-code {
-  font-size: 80%;
-}
-
-#header .heart-icon {
-  color: red;
-}
-
-#header .buixld {
-  color: #a2a2a2;
-}
-
-#header .row {
-  padding-top: 10px;
-}
-
-#direction-nav-wrap {
-  float: right;
-  margin-top: 20px;
-  margin-right: 30px;
-}
-
-#direction-nav-wrap .direction-nav-menu {
-  position: relative;
-  float: right;
-  margin-right: 10px;
-}
-
-#direction-nav-wrap .direction-nav-menu .prev-icon {
-  padding-right: 10px;
-  color: #3B7FBE;
-}
-
-#direction-nav-wrap .direction-nav-menu .next-icon {
-  padding-left: 10px;
-  color: #3B7FBE;
-}
-
-.side-nav ul li a {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 0;
-  color: #919191;
-}
-
-.side-nav ul li a {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.side-nav ul li a:hover {
-  background-color: transparent;
-}
-
-.side-nav ul li a:active,
-.side-nav ul li a:focus,
-.side-nav ul li a:hover {
-  color: black;
-}
-
-ul li a.nav-active {
-  padding-left: 5px;
-  color: #000;
-  border-left: 2px solid black;
-}
-
-nav.stick {
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-}
-
-nav.stick.navbar-inverse {
-  background-color: rgba(34, 34, 34, 0.85);
-  border: none;
-}
-
-nav.stick.navbar-inverse ul li a {
-  color: #fff;
-}
-
-button.navbar-toggle {
-  margin-top: 15px;
-  border: none;
-  border-radius: 0;
-}
-
-@media (max-width: 992px) {
-  ul li a.nav-active {
-    padding-left: 15px;
-    color: #fff;
-    border-left: 2px solid #fff;
-  }
-  nav.stick {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 10000;
-    margin-top: 50px;
-  }
-  nav.stick .navbar-collapse {
-    padding-right: 25px;
-    padding-left: 25px;
-  }
-  nav.stick .navbar-toggle {
-    margin-top: 7.5px;
-    margin-right: 0;
-  }
-  nav.stick .navbar-toggle.collapsed {
-    padding-top: 10px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-bottom: 0;
-  }
-  nav.stick .navbar-brand {
-    display: none;
-  }
-}
-
-#logo .hca-type {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-family: "Times New Roman";
-  font-weight: 700;
-}
-
-#logo .style-guide-type-mobile {
-  padding-left: 10px;
-  margin-top: 0;
-  font-family: "lato";
-  font-size: 16px;
-  font-weight: 300;
-}
-
-#logo .style-guide-type {
-  margin-top: 0;
-  font-family: "lato";
-  font-weight: 300;
-}
-
-#logo .copyright {
-  margin-left: -5px;
-  font-size: 12px;
-}
-
-#wrap .main-content {
-  margin-top: 30px;
-}
-
-#footer .container {
-  padding-bottom: 20px;
-}
-
-#footer h3 {
-  font-family: "lato";
-  font-weight: bold;
-  color: #919191;
-}
-
-#footer .col-sm-8 {
-  padding-right: 0;
-  padding-left: 0;
-}
-
-#footer .footer-text {
-  font-size: 12px;
-  color: #919191;
-}
-
-#footer a {
-  display: block;
-  font-size: 12px;
-}
-
-#footer .footer-social {
-  padding-left: 20px;
-  margin-bottom: 0;
-  margin-left: -20px;
-  text-align: left;
-}
-
-#footer .footer-social span {
-  padding-right: 5px;
-  font-size: 12px;
-  text-align: left;
-  text-transform: uppercase;
-}
-
-#footer .footer-social li {
-  display: inline-block;
-  padding-right: 5px;
-}
-
-@media (max-width: 768px) {
-  #footer .container {
-    padding-bottom: 0;
-  }
-  #footer .footer-col {
-    padding-bottom: 15px;
-  }
-  #footer .col-sm-8 {
-    padding-left: 15px;
-  }
-}
-
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 
 article,
@@ -7376,6 +7111,288 @@ td.visible-print {
   td.hidden-print {
     display: none !important;
   }
+}
+
+/* Sticky footer styles
+      -------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+
+}
+
+/* Wrapper for page content to push down footer */
+
+#wrap {
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto -120px;
+}
+
+#header {
+  min-height: 40px;
+  background-color: #363636;
+}
+
+#header .row {
+  text-align: center;
+}
+
+#header p {
+  color: #6e6e6e;
+}
+
+#right-nav {
+  position: fixed;
+  right: 0;
+  float: right;
+}
+
+/* Set the fixed height of the footer here */
+
+#push,
+#footer {
+  height: 110px;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+
+@media (max-width: 767px) {
+  #footer {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+}
+
+.container .credit {
+  margin: 20px 0;
+}
+
+code {
+  font-size: 80%;
+}
+
+#header .heart-icon {
+  color: red;
+}
+
+#header .buixld {
+  color: #a2a2a2;
+}
+
+#header .row {
+  padding-top: 10px;
+}
+
+#direction-nav-wrap {
+  float: right;
+  margin-top: 20px;
+  margin-right: 30px;
+}
+
+#direction-nav-wrap .direction-nav-menu {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+}
+
+#direction-nav-wrap .direction-nav-menu .prev-icon {
+  padding-right: 10px;
+  color: #3B7FBE;
+}
+
+#direction-nav-wrap .direction-nav-menu .next-icon {
+  padding-left: 10px;
+  color: #3B7FBE;
+}
+
+.side-nav ul li a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 0;
+  color: #919191;
+}
+
+.side-nav ul li a {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.side-nav ul li a:hover {
+  background-color: transparent;
+}
+
+.side-nav ul li a:active,
+.side-nav ul li a:focus,
+.side-nav ul li a:hover {
+  color: black;
+}
+
+ul li a.nav-active {
+  padding-left: 5px;
+  color: #000;
+  border-left: 2px solid black;
+}
+
+nav.stick {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+nav.stick.navbar-inverse {
+  background-color: rgba(34, 34, 34, 0.85);
+  border: none;
+}
+
+nav.stick.navbar-inverse ul li a {
+  color: #fff;
+}
+
+button.navbar-toggle {
+  margin-top: 15px;
+  border: none;
+  border-radius: 0;
+}
+
+@media (max-width: 992px) {
+  ul li a.nav-active {
+    padding-left: 15px;
+    color: #fff;
+    border-left: 2px solid #fff;
+  }
+  nav.stick {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+    margin-top: 50px;
+  }
+  nav.stick .navbar-collapse {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  nav.stick .navbar-toggle {
+    margin-top: 7.5px;
+    margin-right: 0;
+  }
+  nav.stick .navbar-toggle.collapsed {
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 0;
+  }
+  nav.stick .navbar-brand {
+    display: none;
+  }
+}
+
+#logo .hca-type {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Times New Roman";
+  font-weight: 700;
+}
+
+#logo .style-guide-type-mobile {
+  padding-left: 10px;
+  margin-top: 0;
+  font-family: "lato";
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#logo .style-guide-type {
+  margin-top: 0;
+  font-family: "lato";
+  font-weight: 300;
+}
+
+#logo .copyright {
+  margin-left: -5px;
+  font-size: 12px;
+}
+
+#wrap .main-content {
+  margin-top: 30px;
+}
+
+#footer .container {
+  padding-bottom: 20px;
+}
+
+#footer h3 {
+  font-family: "lato";
+  font-weight: bold;
+  color: #919191;
+}
+
+#footer .col-sm-8 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#footer .footer-text {
+  font-size: 12px;
+  color: #919191;
+}
+
+#footer a {
+  display: block;
+  font-size: 12px;
+}
+
+#footer .footer-social {
+  padding-left: 20px;
+  margin-bottom: 0;
+  margin-left: -20px;
+  text-align: left;
+}
+
+#footer .footer-social span {
+  padding-right: 5px;
+  font-size: 12px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+#footer .footer-social li {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+@media (max-width: 768px) {
+  #footer .container {
+    padding-bottom: 0;
+  }
+  #footer .footer-col {
+    padding-bottom: 15px;
+  }
+  #footer .col-sm-8 {
+    padding-left: 15px;
+  }
+}
+
+.color-circle {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  border: 1px solid grey;
+  border-radius: 50%;
+}
+
+.color-circle-text {
+  display: block;
+  margin: 0 auto;
+  line-height: 120px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /*!
