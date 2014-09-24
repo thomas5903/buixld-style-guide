@@ -7470,6 +7470,24 @@ button.navbar-toggle {
   border-radius: 50%;
 }
 
+.form-control {
+  height: 40px;
+  font-size: 20px;
+  border-radius: 3px;
+}
+
+.has-success .form-control {
+  color: #3C763D;
+  border-color: #ccc;
+}
+
+.form-group i {
+  float: right;
+  margin-top: -27px;
+  margin-right: 10px;
+  color: #ccc;
+}
+
 /*!
  *  Font Awesome 3.2.1
  *  the iconic font designed for Bootstrap
